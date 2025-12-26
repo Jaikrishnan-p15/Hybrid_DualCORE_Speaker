@@ -15,9 +15,9 @@ The goal was to offload specific tasks to dedicated hardware:
 Component,Role,Specifications
 ESP32 DevKit V1,Receiver & Master,"Bluetooth 4.2, 240MHz Dual Core"
 STM32 Nucleo-F446RE,Audio Engine,"180MHz, Internal 12-bit DAC"
-LM386 Module,Amplifier,"Class AB Amp, Gain=20"
+LM386 Module Amplifier,"Class AB Amp, Gain=20"
 Speaker,Output,"4Ω, 5W"
-Power Supply,Source,5V 1A DC Adapter
+Power Supply
 
 ## 🧪 Lessons Learned
 Protocol Matters: SPI is excellent for data, but for real-time audio, I2S (Inter-IC Sound) is superior because it handles clock synchronization natively.Debugging Tools: The Logic Analyzer was crucial in identifying that the code wasn't "crashing," but rather suffering from timing jitter.System Design: Offloading processing is powerful, but the inter-chip communication overhead must be lower than the processing gain.
