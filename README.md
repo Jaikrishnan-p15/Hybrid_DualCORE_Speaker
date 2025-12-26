@@ -27,8 +27,15 @@ Protocol Matters: SPI is excellent for data, but for real-time audio, I2S (Inter
 * Implementing Port DSP algorithms (Bass Boost/EQ) directly to ESP32 or use STM32 as an I2S Post-Processor.
 
 ## 🛠️ Usage (For Educational Purposes)
-If you want to replicate the SPI experiment:STM32: Open STM32_Audio_Slave project in STM32CubeIDE. Flash to Nucleo board.ESP32: Open ESP32_BT_Source in Arduino IDE. Install ESP32-A2DP library. Flash to ESP32.Connect: Ensure Common Ground is connected before powering up.
- *Built by [Jaikrishnan](https://github.com/Jaikrishnan-p15) as a study in embedded systems architecture.* 
+If you want to replicate the SPI experiment:
+* STM32: Open STM32_Audio_Slave project in STM32CubeIDE.
+* Flash to Nucleo board.
+* ESP32: Open ESP32_BT_Source in Arduino IDE.
+* Install ESP32-A2DP library. Flash to ESP32.
+* Connect: Ensure Common Ground is connected before powering up.
+  
+ *Built by [Jaikrishnan](https://github.com/Jaikrishnan-p15) as a study in embedded systems architecture.*
+ 
 ## 🏗️ Architecture
 ```mermaid
 graph LR
